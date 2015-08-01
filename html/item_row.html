@@ -1,0 +1,9 @@
+{% for item in items %}
+    <tr>
+        {% for attr in item %}
+        <td>
+            {{ escape(attr) }}
+        </td>
+        {% end %}
+    </tr>
+{% end %}
